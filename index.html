@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!--NAVBAR-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand text-muted" href="#">Chirp</a>
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About Chirp</a></li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-target="#">Services<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Planning</a></li>
+                                <li><a href="#">Implementing</a></li>
+                                <li><a href="#">Testing</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Plans & Pricing</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    <!--END NAVBAR-->
+
+    <!--CAROUSEL-->
+    <div id="myCarousel" class="carousel slide jumbotron">
+        <div class="container">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error iste nostrum. Assumenda cumque cupiditate fuga omnis quas reiciendis repellat!</p>
+                    <p class="btn-group">
+                        <a class="btn btn-success btn-lg" href="#">Lorem ipsum dolor.</a>
+                        <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Lorem ipsum
+                            dolor sit.</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <h1>Lorem ipsum dolor.</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>
+                        <a class="btn btn-success btn-lg" href="#">Get Started Today!</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <h1>Lorem ipsum dolor.</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>
+                        <a class="btn btn-success btn-lg" href="#">Get Started Today!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+    <!--END CAROUSEL-->
+
+    <!--MODAL-->
+    <div class="modal fade" id="textModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="mobilePhone" class="sr-only">Mobile Phone</label>
+                            <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>iOS</option>
+                                <option>Android</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me link</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL END-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <b class="glyphicon glyphicon-camera"></b>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur beatae blanditiis, cumque debitis delectus, doloremque earum error ex facilis fugit inventore iste laudantium perspiciatis quasi, repellat reprehenderit tempore? Autem est labore saepe voluptates!</p>
+            </div>
+            <div class="col-sm-4">
+                <b class="glyphicon glyphicon-user"></b>
+                <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi, eaque illum nulla omnis possimus praesentium quas tenetur. Aperiam consectetur est in iusto, laboriosam molestiae nam non, officia praesentium, reiciendis rem voluptatibus?</p>
+            </div>
+            <div class="col-sm-4">
+                <b class="glyphicon glyphicon-cloud"></b>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eos error et eveniet explicabo facilis fugiat harum illum in incidunt libero necessitatibus neque non, numquam, odit perspiciatis quod saepe suscipit voluptatibus.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6 hidden-xs">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at dolor dolorem doloribus, eius eum fuga, ipsa laboriosam maxime mollitia odit unde voluptas voluptate! Consequatur dolorem in, incidunt odit possimus sint temporibus?</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md-push-6">
+                        <img class="img-responsive" src="img/thumb.jpg" alt="video thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-pull-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sequi.</p>
+                        <a href="#">Lorem ipsum dolor sit.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Lorem ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur dolor facilis perferendis quam quod tempore totam. Distinctio dolor et placeat quos repellendus. Animi dolore porro voluptate! Earum, quod, soluta!</p>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <p>&copy; 2017 Chirp - By Bird Rock Cloud Land, Inc.</p>
+        </div>
+    </div>
+</body>
+</html>
